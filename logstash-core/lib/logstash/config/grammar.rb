@@ -36,7 +36,7 @@ module LogStashConfig
   end
 
   module Config1
-    def _1
+    def _one
       elements[0]
     end
 
@@ -44,11 +44,11 @@ module LogStashConfig
       elements[1]
     end
 
-    def _2
+    def _two
       elements[2]
     end
 
-    def _3
+    def _three
       elements[4]
     end
   end
@@ -315,11 +315,11 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -595,11 +595,11 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -607,7 +607,7 @@ module LogStashConfig
       elements[4]
     end
 
-    def _3
+    def _three
       elements[5]
     end
 
@@ -777,11 +777,11 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -1500,11 +1500,11 @@ module LogStashConfig
   end
 
   module Array0
-    def _1
+    def _one
       elements[0]
     end
 
-    def _2
+    def _two
       elements[2]
     end
 
@@ -1521,11 +1521,11 @@ module LogStashConfig
   end
 
   module Array2
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -1641,11 +1641,11 @@ module LogStashConfig
   end
 
   module Hash0
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -1786,11 +1786,11 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -1981,7 +1981,7 @@ module LogStashConfig
   end
 
   module If1
-    def _1
+    def _one
       elements[1]
     end
 
@@ -1989,11 +1989,11 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
-    def _3
+    def _three
       elements[5]
     end
 
@@ -2105,11 +2105,11 @@ module LogStashConfig
   end
 
   module ElseIf1
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2117,11 +2117,11 @@ module LogStashConfig
       elements[4]
     end
 
-    def _3
+    def _three
       elements[5]
     end
 
-    def _4
+    def four
       elements[7]
     end
 
@@ -2247,11 +2247,11 @@ module LogStashConfig
   end
 
   module Else1
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2345,7 +2345,7 @@ module LogStashConfig
   end
 
   module Condition0
-    def _1
+    def _one
       elements[0]
     end
 
@@ -2353,7 +2353,7 @@ module LogStashConfig
       elements[1]
     end
 
-    def _2
+    def _two
       elements[2]
     end
 
@@ -2431,7 +2431,7 @@ module LogStashConfig
   end
 
   module Expression0
-    def _1
+    def _one
       elements[1]
     end
 
@@ -2439,7 +2439,7 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2552,11 +2552,11 @@ module LogStashConfig
   end
 
   module NegativeExpression0
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2564,7 +2564,7 @@ module LogStashConfig
       elements[4]
     end
 
-    def _3
+    def _three
       elements[5]
     end
 
@@ -2693,7 +2693,7 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
@@ -2701,7 +2701,7 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2758,7 +2758,7 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
@@ -2766,7 +2766,7 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -2953,11 +2953,11 @@ module LogStashConfig
   end
 
   module MethodCall0
-    def _1
+    def _one
       elements[0]
     end
 
-    def _2
+    def _two
       elements[2]
     end
 
@@ -2978,15 +2978,15 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
-    def _3
+    def _three
       elements[5]
     end
 
@@ -3132,7 +3132,7 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
@@ -3140,7 +3140,7 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
@@ -3295,7 +3295,7 @@ module LogStashConfig
       elements[0]
     end
 
-    def _1
+    def _one
       elements[1]
     end
 
@@ -3303,7 +3303,7 @@ module LogStashConfig
       elements[2]
     end
 
-    def _2
+    def _two
       elements[3]
     end
 
