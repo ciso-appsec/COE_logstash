@@ -23,6 +23,7 @@ require "logstash/util/cloud_setting_auth"
 require "logstash/util/modules_setting_array"
 require "socket"
 require "stud/temporary"
+require "Addressable"
 
 module LogStash
   # In the event that we're requiring this file without bootstrap/environment.rb
@@ -133,7 +134,7 @@ module LogStash
 
       # Windows safe way to produce a file: URI.
       file_schema = "file://" + (LogStash::Environment.windows? ? "/" : "")
-      LogStash::Logging::Logger::reconfigure(::URI.encode(file_schema + ::File.absolute_path(log4j_config_location)))
+      LogStash::Logging::Logger::reconfigure(Addressable::URI.encode(file_schema + ::File.absolute_path(log4j_config_location)))
     end
     # override log level that may have been introduced from a custom log4j config file
     LogStash::Logging::Logger::configure_logging(settings.get("log.level"))

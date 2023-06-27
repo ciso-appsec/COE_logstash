@@ -45,10 +45,18 @@ public final class SnapshotExt extends RubyBasicObject {
     @JRubyMethod(required = 1, optional = 1)
     public SnapshotExt initialize(final ThreadContext context, final IRubyObject[] args) {
         metricStore = args[0];
+        System.out.println("metric score: " + metricStore);
+        System.out.println("args[0]: " + args[0]);
+        System.out.println("args: " + args);
+        System.out.println("context: " + context);
+        System.out.println("context.runtime.getTime(): " + context.runtime.getTime());
+        // System.out.println("(RubyTime) RubyTime.at(context, context.runtime.getTime(), args[0]): " + RubyTime.newInstance(context, context.runtime.getTime(), args));
+
         if (args.length == 2) {
             createdAt = (RubyTime) args[1];
         } else {
-            createdAt = RubyTime.newInstance(context, context.runtime.getTime());
+            // createdAt = RubyTime.newInstance(context, context.runtime.getTime(), args);
+            System.out.println("args: " + args);
         }
         return this;
     }
