@@ -119,7 +119,7 @@ module LogStash
         )
       end
       # create Gemfile.jruby-1.9.lock from template iff a template exists it itself does not exist
-      lock_template = ::File.join(ENV["LOGSTASH_HOME"], "Gemfile.jruby-2.6.lock.release")
+      lock_template = ::File.join(ENV["LOGSTASH_HOME"], "Gemfile.jruby-3.1.lock.release")
       if ::File.exists?(lock_template) && !::File.exists?(Environment::LOCKFILE)
         FileUtils.copy(lock_template, Environment::LOCKFILE)
       end
@@ -163,7 +163,7 @@ module LogStash
           begin
             execute_bundler(options)
             break
-          rescue ::Bundler::SolveFailure => e
+          rescue ::Bundler::VersionConflict => e
             $stderr.puts("Plugin version conflict, aborting")
             raise(e)
           rescue ::Bundler::GemNotFound => e
